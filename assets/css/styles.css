@@ -1,0 +1,149 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background: var(--color-bg-desktop);
+}
+/* colors */
+:root {
+  --color-primary: #53b9d9;
+  --color-white: #f6f6f6;
+  --color-font: #474747;
+  --color-footer-mobile: #146183;
+  --color-footer-desktop: linear-gradient(
+    97.01deg,
+    #53b9d9 -6.41%,
+    rgba(20, 77, 101, 0) 110.43%
+  );
+  --color-lite-primary: #7edcf9;
+  --color-bg-desktop: linear-gradient(
+    243.02deg,
+    #10a9da -9.92%,
+    #92e5ff 106.28%
+  );
+}
+/* colors */
+/* buttons */
+.btn {
+  background-color: #0e5d80;
+  border: 3px solid #0e5d80;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.9rem 1.2rem 0.8rem 1.3rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 2.7rem;
+}
+.btn-white {
+  background-color: transparent;
+  color: #fff;
+  border: 3px solid #fff;
+  border-radius: 8px;
+  padding: 0.9rem 1.2rem 0.8rem 1.3rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 2.7rem;
+}
+.nav__menu-btn {
+  background-color: #fff;
+  border-radius: 8px;
+
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+/* buttons */
+/* navbar */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav__right {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-header {
+  background-color: #53b9d9;
+  padding: 18px 17px;
+}
+.nav__logo {
+  display: flex;
+}
+.nav__logo > p {
+  color: #fff;
+  font-weight: 900;
+  font-size: 2.4rem;
+}
+.nav__shop {
+  margin-left: 0.7rem;
+}
+.mobile {
+  display: flex;
+}
+.desktop {
+  display: none;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+  }
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav__logo {
+  }
+  .nav__btn_desktop {
+  }
+  .desktop .btn {
+    color: var(--color-primary);
+    margin-left: 4rem;
+  }
+  .main-header {
+    background-color: transparent;
+  }
+  .nav__list {
+    list-style: none;
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+  }
+  .nav__right > a {
+    color: #fff;
+    font-size: 2.6rem;
+    font-weight: 700;
+    text-align: right;
+    line-height: 54px;
+  }
+}
+/* troggler */
+.bar {
+  background-color: #292d32;
+  width: 25px;
+  height: 2px;
+  border-radius: 5px;
+  margin: 6px 0;
+}
+/* troggler */
