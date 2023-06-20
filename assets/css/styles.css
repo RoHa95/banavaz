@@ -52,33 +52,28 @@ body {
   font-weight: 700;
   line-height: 2.7rem;
 }
-.nav__menu-btn {
-  background-color: #fff;
-  border-radius: 8px;
 
-  width: 44px;
-  height: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
 /* buttons */
 /* navbar */
+.main-header {
+  background-color: #53b9d9;
+  padding: 18px 17px;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
 .nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .nav__right {
   display: flex;
   width: 50%;
   justify-content: space-between;
   align-items: center;
-}
-.main-header {
-  background-color: #53b9d9;
-  padding: 18px 17px;
 }
 .nav__logo {
   display: flex;
@@ -97,10 +92,72 @@ body {
 .desktop {
   display: none;
 }
-.container {
-  max-width: 1440px;
-  margin: 0 auto;
+
+.nav__menu-btn {
+  background-color: #fff;
+  border-radius: 8px;
+
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
+
+.list__troggler {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.4s ease-out;
+}
+.list__troggler > li {
+  border-bottom: 1px solid #fff;
+}
+.list__troggler > li > a {
+  color: #fff;
+  font-size: 1.6rem;
+  display: block;
+  margin-top: 0.5rem;
+  padding: 1rem 0;
+  font-weight: 700;
+  cursor: pointer;
+}
+.list__troggler > li > a:hover {
+  color: #146183;
+}
+
+.nav.nav__expanded .list__troggler {
+  opacity: 1;
+  max-height: 100vh;
+}
+/* troggler */
+.bar {
+  background-color: #292d32;
+  width: 25px;
+  height: 2px;
+  border-radius: 5px;
+  margin: 6px 0;
+  transition: all 0.4s ease-out;
+}
+.nav.nav__expanded .bar-one {
+  transform: rotate(-45deg) translate(-6px, 6px);
+  margin: 8px 0;
+}
+
+.nav.nav__expanded .bar-two {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+.nav.nav__expanded .bar-three {
+  transform: rotate(45deg) translate(-8px, -8px);
+  margin: 8px 0;
+}
+/* troggler */
 
 @media screen and (min-width: 768px) {
   .nav {
@@ -137,13 +194,8 @@ body {
     text-align: right;
     line-height: 54px;
   }
+  .list__troggler {
+    display: none;
+  }
 }
-/* troggler */
-.bar {
-  background-color: #292d32;
-  width: 25px;
-  height: 2px;
-  border-radius: 5px;
-  margin: 6px 0;
-}
-/* troggler */
+/* navbar */
