@@ -32,7 +32,7 @@
         </div>
         <div class="nav__btn_desktop desktop">
           <button class="btn">ورود به داشبورد</button>
-          <button class="btn-white">دانلود اپلیکیشن</button>
+          <button class="btn-transparent">دانلود اپلیکیشن</button>
         </div>
 
         <ul class="list__troggler">
@@ -42,19 +42,37 @@
         </ul>
       </nav>
     </header>
-    <h1>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, dolorum
-      a quos in quae mollitia aliquam distinctio alias dolore natus
-      reprehenderit est similique eligendi facilis praesentium. Nulla qui
-      dolores ad dolor doloremque possimus quaerat alias nam nihil aliquam autem
-      accusantium totam exercitationem quis, libero nisi. Sit, quo a. Minus
-      aspernatur corporis placeat! Dignissimos dolorum, esse, ea quaerat
-      tempora, quas voluptatibus soluta veniam placeat facere at voluptatem aut
-      pariatur. Fugit impedit, corrupti voluptatibus vel doloribus atque!
-      Perferendis incidunt cum natus magnam aut at odio tempore iure ipsam
-      aliquam id quidem nam omnis rem, in eum sapiente velit suscipit atque
-      exercitationem dolorum!
-    </h1>
+    <!-- hero component -->
+    <section class="hero container">
+      <div class="hero__banner">
+        <picture class="hero__image">
+          <source
+            media="(max-width:768px)"
+            srcset="/assets/images/banner-mobile.svg"
+          />
+          <!-- <source
+            media="(min-width:769px)"
+            srcset="/assets/images/hous-banner.svg"
+          /> -->
+          <img
+            src="/assets/images/banner-mobile.svg"
+            alt="Flowers"
+            style="width: auto"
+          />
+        </picture>
+        <img class="desktop" src="/assets/images/mobile.png" />
+      </div>
+      <div class="hero__title">
+        <h1>خیالت از خونه راحت</h1>
+        <p>
+          بانواز واژه ای کردی به نام باخبر ساختن با صدای بلند است. درست مثل
+          بانواز<br />با سنسورهای بانواز از هیچ اتفاقی بی خبر نیستی<br />چه خونه
+          باشی چه نه!
+        </p>
+        <button class="btn-white">فروشگاه بانواز</button>
+      </div>
+    </section>
+
     <script src="/assets/js/main.js"></script>
   </body>
 </html>

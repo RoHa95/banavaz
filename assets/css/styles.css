@@ -9,7 +9,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  background: var(--color-bg-desktop);
+  background-color: var(--color-primary);
 }
 /* colors */
 :root {
@@ -42,7 +42,7 @@ body {
   font-weight: 700;
   line-height: 2.7rem;
 }
-.btn-white {
+.btn-transparent {
   background-color: transparent;
   color: #fff;
   border: 3px solid #fff;
@@ -51,6 +51,17 @@ body {
   font-size: 1.6rem;
   font-weight: 700;
   line-height: 2.7rem;
+}
+.btn-white {
+  background-color: #fff;
+  border: none;
+  color: var(--color-primary);
+  border-radius: 20px;
+  padding: 1.2rem 4.6rem 1.5rem 4.7rem;
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 2.7rem;
+  box-shadow: 0px 22px 40px rgba(0, 0, 0, 0.1);
 }
 
 /* buttons */
@@ -160,7 +171,8 @@ body {
 /* troggler */
 
 @media screen and (min-width: 768px) {
-  .nav {
+  body {
+    background: var(--color-bg-desktop);
   }
   .mobile {
     display: none;
@@ -199,3 +211,87 @@ body {
   }
 }
 /* navbar */
+/* hero section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.hero__banner {
+  /* width: fit-content; */
+  margin-top: 5rem;
+}
+.hero__title {
+  padding: 0 1.8rem;
+}
+.hero__title h1 {
+  font-size: 3.2rem;
+  line-height: 4.8rem;
+  font-weight: 700;
+  color: #fff;
+  margin-top: 7rem;
+}
+.hero__title p {
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  color: #fff;
+  margin-top: 2rem;
+}
+.hero__title button {
+  margin-top: 4rem;
+  font-size: 1.8rem;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    flex-direction: row;
+    margin-top: 0.5rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+  }
+  .hero__banner {
+    position: relative;
+    display: inline-block;
+    order: 2;
+    /* margin-left: 1rem; */
+    margin: 0;
+  }
+  .hero__image > img {
+    position: absolute;
+    left: 0;
+    top: 10rem;
+  }
+  .hero__banner .desktop {
+    position: absolute;
+    top: 0;
+    left: 5rem;
+  }
+  .hero__title {
+    order: 1;
+    padding: 0;
+    display: block;
+  }
+  .hero__title h1 {
+    font-size: 8rem;
+    color: #f6f6f6;
+    margin-top: 7rem;
+    font-weight: 700;
+    line-height: 5.4rem;
+  }
+  .hero__title p {
+    color: #f6f6f6;
+    font-size: 3.6rem;
+    margin-top: 4rem;
+    font-weight: 500;
+    line-height: 5.4rem;
+    /* width: 80.8rem;
+    height: 21.6rem; */
+  }
+  .hero__title button {
+    margin-top: 8.8rem;
+    font-size: 3.2rem;
+  }
+}
+/* hero section */
