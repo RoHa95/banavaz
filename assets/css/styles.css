@@ -442,3 +442,43 @@ body {
 }
 
 /* hero section */
+/* icons section */
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.6rem;
+  margin-top: 5rem;
+  flex-wrap: wrap;
+}
+.icons__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  border-radius: 14px;
+  margin: 3rem;
+}
+.icons__item img {
+  width: 40px;
+  height: 40px;
+}
+@media screen and (min-width: 768px) {
+  .icons {
+    margin-top: 12rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .icons__item {
+    width: 130px;
+    height: 130px;
+    border-radius: 40px;
+  }
+  .icons__item img {
+    width: 70px;
+    height: 70px;
+  }
+}
+/* icons section */
