@@ -67,7 +67,7 @@ body {
 /* buttons */
 /* navbar */
 .main-header {
-  background-color: #53b9d9;
+  background-color: var(--color-primary);
   padding: 18px 17px;
 }
 .container {
@@ -170,6 +170,24 @@ body {
 }
 /* troggler */
 
+@media screen and (min-width: 640px) {
+  .main-header {
+    background-color: transparent;
+  }
+  .nav__list {
+    list-style: none;
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+  }
+  .nav__right > a {
+    color: #fff;
+    font-size: 2.6rem;
+    font-weight: 700;
+    text-align: right;
+    line-height: 54px;
+  }
+}
 @media screen and (min-width: 768px) {
   body {
     background: var(--color-bg-desktop);
@@ -243,55 +261,184 @@ body {
   margin-top: 4rem;
   font-size: 1.8rem;
 }
+.hero__banner img {
+  width: 100%;
+}
+
+@media screen and (min-width: 640px) {
+  body {
+    background: var(--color-bg-desktop);
+  }
+  .hero {
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    margin-top: 3rem;
+  }
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .hero__banner {
+    order: 2;
+    display: inline-block;
+  }
+
+  .hero__banner-house {
+    position: absolute;
+    top: 12rem;
+    left: 0;
+    max-width: 360px;
+  }
+  .hero__banner-mobile {
+    position: absolute;
+    top: 2rem;
+    left: 25px;
+    max-width: 140px;
+  }
+
+  .hero__title {
+    order: 1;
+    display: inline-block;
+    max-width: 50%;
+  }
+  .hero__title h1 {
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 6rem;
+  }
+  .hero__title p {
+    font-size: 1.7rem;
+    line-height: 4rem;
+  }
+}
 @media screen and (min-width: 768px) {
   .hero {
     flex-direction: row;
-    margin-top: 0.5rem;
-    align-items: center;
     justify-content: space-between;
-    padding: 0 2rem;
+    position: relative;
+    align-items: center;
+    margin-top: 3rem;
   }
   .hero__banner {
-    position: relative;
-    display: inline-block;
     order: 2;
-    /* margin-left: 1rem; */
-    margin: 0;
+    display: inline-block;
   }
-  .hero__image > img {
+
+  .hero__banner-house {
     position: absolute;
+    top: 12rem;
     left: 0;
-    top: 10rem;
+    max-width: 450px;
   }
-  .hero__banner .desktop {
+  .hero__banner-mobile {
     position: absolute;
-    top: 0;
-    left: 5rem;
+    top: 2rem;
+    left: 25px;
+    max-width: 230px;
   }
+
   .hero__title {
     order: 1;
-    padding: 0;
-    display: block;
+    display: inline-block;
+    max-width: 45%;
   }
   .hero__title h1 {
-    font-size: 8rem;
-    color: #f6f6f6;
-    margin-top: 7rem;
     font-weight: 700;
-    line-height: 5.4rem;
+    font-size: 4.8rem;
+    line-height: 6rem;
   }
   .hero__title p {
-    color: #f6f6f6;
-    font-size: 3.6rem;
-    margin-top: 4rem;
-    font-weight: 500;
-    line-height: 5.4rem;
-    /* width: 80.8rem;
-    height: 21.6rem; */
-  }
-  .hero__title button {
-    margin-top: 8.8rem;
-    font-size: 3.2rem;
+    font-size: 1.8rem;
+    line-height: 4rem;
   }
 }
+@media screen and (min-width: 1024px) {
+  .hero {
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    margin-top: 3rem;
+  }
+  .hero__banner {
+    order: 2;
+    display: inline-block;
+  }
+
+  .hero__banner-house {
+    position: absolute;
+    top: 12rem;
+    left: 0;
+    max-width: 450px;
+  }
+  .hero__banner-mobile {
+    position: absolute;
+    top: 2rem;
+    left: 25px;
+    max-width: 230px;
+  }
+
+  .hero__title {
+    order: 1;
+    display: inline-block;
+    max-width: 60%;
+  }
+  .hero__title h1 {
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 13.5rem;
+  }
+  .hero__title p {
+    font-size: 2.6rem;
+    line-height: 5.4rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero {
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    margin-top: 3rem;
+  }
+  .hero__banner {
+    order: 2;
+    display: inline-block;
+  }
+
+  .hero__banner-house {
+    position: absolute;
+    top: 12rem;
+    left: 0;
+    max-width: 450px;
+  }
+  .hero__banner-mobile {
+    position: absolute;
+    top: 2rem;
+    left: 25px;
+    max-width: 230px;
+  }
+
+  .hero__title {
+    order: 1;
+    display: inline-block;
+    max-width: 68%;
+  }
+  .hero__title h1 {
+    font-size: 9rem;
+    font-weight: 700;
+    line-height: 13.5rem;
+  }
+  .hero__title p {
+    font-size: 3.6rem;
+    line-height: 5.4rem;
+  }
+}
+
 /* hero section */
