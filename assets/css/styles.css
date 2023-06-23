@@ -451,6 +451,12 @@ body {
   margin-top: 5rem;
   flex-wrap: wrap;
 }
+.icon__item_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .icons__item {
   display: flex;
   align-items: center;
@@ -460,14 +466,28 @@ body {
   background-color: #fff;
   border-radius: 14px;
   margin: 3rem;
+  margin-bottom: 2rem;
+  box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.1);
 }
 .icons__item img {
   width: 40px;
   height: 40px;
 }
+.icon__item_container span {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  color: #fff;
+}
 @media screen and (min-width: 768px) {
   .icons {
     margin-top: 12rem;
+  }
+  .icon__item_container span {
+    font-weight: 500;
+    font-size: 2.2rem;
+    line-height: 4rem;
+    color: #fff;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -479,6 +499,12 @@ body {
   .icons__item img {
     width: 70px;
     height: 70px;
+  }
+  .icon__item_container span {
+    font-weight: 500;
+    font-size: 3.4rem;
+    line-height: 5rem;
+    color: #fff;
   }
 }
 /* icons section */
