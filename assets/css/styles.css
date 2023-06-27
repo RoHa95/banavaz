@@ -498,7 +498,7 @@ body {
   height: 80px;
   background-color: #fff;
   border-radius: 14px;
-  margin: 3rem;
+  margin: 0rem;
   margin-bottom: 2rem;
   box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.1);
 }
@@ -508,9 +508,10 @@ body {
 }
 .icon__item_container span {
   font-weight: 500;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 2.7rem;
   color: #fff;
+  margin-bottom: 2.5rem;
 }
 @media screen and (min-width: 768px) {
   .icons {
@@ -553,7 +554,7 @@ body {
 .information img {
   width: 316px;
   height: 74px;
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 .information h1 {
   margin-top: 4rem;
